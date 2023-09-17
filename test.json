@@ -1,0 +1,34 @@
+{
+    "title_tour": "Это тайтл Тура",
+    "text_tour": "это текст Тура",
+    "days": [
+        {
+            "title_days": "Это тайтл Дня",
+            "description_days": "это описание дня 1",
+            "days_images": [
+                {
+                    "image": "/media/media/days_images/Fon1.jpg"
+                }
+            ]
+        }
+    ],
+    "accommodations": [
+        {
+            "title_accommodation": "Это Тайтл Проживания",
+            "description_accommodation": "это описание дня 1",
+            "comfort": "Base",
+            "type": "Hostel",
+            "hotels": [
+                {
+                    "title_hotel": "Это Тайтл Отеля",
+                    "description_hotel": "это описание дня 1",
+                    "hotel_images": [
+                        {
+                    "image": "/media/media/days_images/Fon1.jpg"
+                }
+                    ]
+                }
+            ]
+        }
+    ]
+}

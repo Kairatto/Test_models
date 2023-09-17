@@ -23,6 +23,10 @@ INSTALLED_APPS = [
     # 'corsheaders',
 
     'apps.tour',
+    'apps.accommodation',
+    'apps.days',
+    'apps.tour_images',
+
 ]
 
 MIDDLEWARE = [
@@ -54,7 +58,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'config.wsgi.application'
-
 
 
 DATABASES = {

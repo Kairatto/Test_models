@@ -1,0 +1,58 @@
+[
+    {
+        "slug": "title-tour",
+        "title_tour": "title_tour",
+        "text_tour": "text_tour",
+        "tour_images": [],
+        "days": [
+            {
+                "slug": "title-days",
+                "title_days": "title_days",
+                "description_days": "description_days",
+                "days_images": []
+            },
+            {
+                "slug": "title-days2",
+                "title_days": "title_days2",
+                "description_days": "description_days",
+                "days_images": []
+            }
+        ],
+        "accommodations": [
+            {
+                "slug": "title-accommodation",
+                "title_accommodation": "title_accommodation",
+                "description_accommodation": "description_accommodation",
+                "comfort": "Base",
+                "type": "Hostel",
+                "hotels": [
+                    {
+                        "slug": "title-hotel",
+                        "title_hotel": "title_hotel",
+                        "description_hotel": "description_hotel",
+                        "hotel_images": []
+                    },
+                    {
+                        "slug": "title-hotel2",
+                        "title_hotel": "title_hotel2",
+                        "description_hotel": "description_hotel",
+                        "hotel_images": []
+                    }
+                ]
+            }
+        ],
+        "important_informations": [
+            {
+                "slug": "title-important-information",
+                "title_important_information": "title_important_information",
+                "description_important_information": "description_important_information"
+            },
+            {
+                "slug": "title-important-information2",
+                "title_important_information": "title_important_information2",
+                "description_important_information": "description_important_information"
+            }
+        ],
+        "create_date": "2023-09-22"
+    }
+]

@@ -4,18 +4,18 @@ from slugify import slugify
 from apps.tour.models import Tour
 
 
-class Days(models.Model):
-    title_days = models.CharField(max_length=300, verbose_name='Название дня')
-    description_days = models.TextField(blank=True)
+class ImportantInformation(models.Model):
+    title_important_information = models.CharField(max_length=300, verbose_name='Важно знать')
+    description_important_information = models.TextField(blank=True)
     slug = models.SlugField(max_length=300, unique=True, blank=True)
     tour = models.ForeignKey(
         to=Tour,
         on_delete=models.CASCADE,
-        related_name='days',
+        related_name='important_informations',
     )
 
     def __str__(self) -> str:
-        return self.title_days
+        return self.title_important_information
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -23,7 +23,7 @@ class Days(models.Model):
         super().save(*args, **kwargs)
 
         if not self.slug:
-            base_slug = slugify(f"{self.id}-{self.title_days}")
+            base_slug = slugify(f"{self.id}-{self.title_important_information}")
             slug = base_slug
             counter = 1
             while Tour.objects.filter(slug=slug).exists():
@@ -33,17 +33,4 @@ class Days(models.Model):
             self.save()
 
     class Meta:
-        verbose_name = 'День'
-        verbose_name_plural = 'Дни'
-
-
-class DaysImage(models.Model):
-    image = models.ImageField(upload_to='days_images')
-    day = models.ForeignKey(
-        to=Days,
-        on_delete=models.CASCADE,
-        related_name='days_images',
-        null=True,
-        blank=True,
-        default=None
-    )
+        verbose_name = 'Важно знать'
